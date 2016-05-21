@@ -1,0 +1,26 @@
+{
+  "name": "node-run-cmd",
+  "version": "1.0.0",
+  "description": "Easily run console/terminal command(s) from Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-h-/node-run-cmd.git"
+  },
+  "keywords": [
+    "node",
+    "console",
+    "terminal",
+    "bash",
+    "command"
+  ],
+  "author": "Charlie Hulcher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/c-h-/node-run-cmd/issues"
+  },
+  "homepage": "https://github.com/c-h-/node-run-cmd#readme"
+}
