@@ -173,7 +173,7 @@ Options available for the `commands` or `globalOptions` argument:
 | gid | number | no | null | Sets the group identity of the process. |
 | shell | boolean or string | no | null | If true, runs command inside of a shell. Uses '/bin/sh' on UNIX, and 'cmd.exe' on Windows. A different shell can be specified as a string. The shell should understand the -c switch on UNIX, or /s /c on Windows. Defaults to false (no shell). |
 
-### Global-Only Commands
+### Global-Only Options
 These options can only be set in the `globalOptions` argument.
 
 | property | type | required | default | description |
