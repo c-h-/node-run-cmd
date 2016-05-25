@@ -1,6 +1,6 @@
 {
   "name": "node-run-cmd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easily run console/terminal command(s) from Node",
   "main": "index.js",
   "scripts": {
