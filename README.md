@@ -8,7 +8,9 @@ With node-run-cmd you can execute a single command or an array of commands quite
 
 If you want, set in-depth options for commands being run, including callbacks for data, errors, and completion. Also set working directory, environment variables, run execution process in detached mode, set the uid and gid for the execution process(es), and set the shell to run the command in.
 
-The source that this package is based on has been in production since February, 2016.
+The source that this package is based on has been in production since February, 2016. Note that the examples here are for illustrative purposes only; most of the time there is no real need to run commands from Node, and they should be avoided if there are cross-platform requirements. This package aims to help when there isn't an agreeable alternative.
+
+If most of your commands are filesystem related, I would instead look to [node-fs-extra](https://github.com/jprichardson/node-fs-extra) to accomplish what the commands would have.
 
 ##### NPM:
 ![node-cmd npm version](https://img.shields.io/npm/v/node-run-cmd.svg) ![supported node version for node-cmd](https://img.shields.io/node/v/node-run-cmd.svg) ![total npm downloads for node-cmd](https://img.shields.io/npm/dt/node-run-cmd.svg) ![monthly npm downloads for node-cmd](https://img.shields.io/npm/dm/node-run-cmd.svg) ![npm licence for node-cmd](https://img.shields.io/npm/l/node-run-cmd.svg)
