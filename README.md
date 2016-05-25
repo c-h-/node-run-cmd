@@ -8,6 +8,8 @@ With node-run-cmd you can execute a single command or an array of commands quite
 
 If you want, set in-depth options for commands being run, including callbacks for data, errors, and completion. Also set working directory, environment variables, run execution process in detached mode, set the uid and gid for the execution process(es), and set the shell to run the command in.
 
+The source that this package is based on has been in production since February, 2016.
+
 ##### NPM:
 ![node-cmd npm version](https://img.shields.io/npm/v/node-run-cmd.svg) ![supported node version for node-cmd](https://img.shields.io/node/v/node-run-cmd.svg) ![total npm downloads for node-cmd](https://img.shields.io/npm/dt/node-run-cmd.svg) ![monthly npm downloads for node-cmd](https://img.shields.io/npm/dm/node-run-cmd.svg) ![npm licence for node-cmd](https://img.shields.io/npm/l/node-run-cmd.svg)
 
@@ -156,12 +158,12 @@ Options available for the `commands` or `globalOptions` argument:
 | property | type | required | default | description |
 |----------|------|----------|---------|-------------|
 | command | string | yes | - | the command to run |
-| cwd | string | no | process.cwd() | the directory to run the command in |
+| cwd | string | no | `process.cwd()` | the directory to run the command in |
 | onData | function(data) | no | null | where to send output from stdout. Called each time stdout is written. |
 | onError | function(data) | no | null | where to send output from stderr. Called each time stderr is written. |
 | onDone | function(code) | no | null | where to send the exit code of the command. Called once. |
-| verbose | boolean | no | false | show verbose output |
-| logger | function(data) | no | console.log | what function to use to log *when verbose is set to true* |
+| verbose | boolean | no | `false` | show verbose output |
+| logger | function(data) | no | `console.log` | what function to use to log *when verbose is set to true* |
 | env | object | no | null | Environment key-value pairs
 | stdio | string or array | no | null | Child's stdio configuration
 | detached | boolean | no | null | Prepare child to run independently of its parent process. Specific behavior depends on the platform. |
@@ -174,4 +176,4 @@ These options can only be set in the `globalOptions` argument.
 
 | property | type | required | default | description |
 |----------|------|----------|---------|-------------|
-| mode | string | no | sequential | Whether to run commands in series (sequentially) or in parallel. |
+| mode | string | no | `'sequential'` | Whether to run commands in series (sequentially) or in parallel. |
