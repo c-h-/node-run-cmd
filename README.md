@@ -2,6 +2,8 @@
 -
 *Node.js commandline/terminal interface.*
 
+_This package was developed on Node 5.4.0. Earlier versions of Node may not have support for the Javascript syntax of this package._
+
 Easily run simple or sophisticated console/terminal command(s) from Node. Supports sequential and parallel execution. Returns a promise that resolves to an array of exit codes for each command run.
 
 With node-run-cmd you can execute a single command or an array of commands quite simply.
