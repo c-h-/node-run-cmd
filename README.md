@@ -1,4 +1,7 @@
 # node-run-cmd
+
+# This repository is not maintained. Try using other, more mature shell command libraries.
+
 -
 *Node.js commandline/terminal interface.*
 
